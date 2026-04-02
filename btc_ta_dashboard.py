@@ -72,7 +72,7 @@ def plot_ta_chart(ta_df):
                       hovermode='x unified', legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1))
     return fig
 
-# --- Bagian utama app ---
+# Main page app
 st.title("Bitcoin Technical Analysis Dashboard")
 
 uploaded = st.file_uploader("Upload file", type="csv")
@@ -110,4 +110,4 @@ if uploaded is not None:
             fig = plot_ta_chart(ta_df)
             st.plotly_chart(fig, use_container_width=True)
 else:
-    st.info("Please upload a CSV file first.")
+    st.info("Upload CSV first.")
