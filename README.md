@@ -25,3 +25,4 @@ Timestamp: Unix timestamp (in seconds).
 Open, High, Low, Close: Price data.
 Volume: Trading volume.
 
+Made by me with Gemini AI help
